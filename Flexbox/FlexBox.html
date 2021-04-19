@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Box</title>
+    <meta name="viewport" content="width=device-width,initial-
+scale="1"">
+    <!--The viewport metatag is what makes a regular page more responsive and usable on mobile devices-->
+    <!--The default behavior of a flexbox container is to lay child elements out in a single row.-->
+    <!--The general layout behavior of the children within a flex container is controlled by the flex-direction rule. Generally, content can be placed in horizontal rows or vertical columns. There are four possible values for flex-direction: column, column- reverse, row, and row-reverse.-->
+    <style>
+        #container
+        {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+        }
+        #one, #two, #three
+        {
+            border: 1px solid black;
+            font-family: Arial;
+            font-size: .75em;
+            padding: 10px;
+            width: 200px;
+        }
+        #one
+        { background-color: antiquewhite;}
+        #two
+        { background-color: azure; order: -1; }
+        #three
+        { background-color: beige; order: -2; }
+    </style>
+</head>
+    
+<body>
+<div id="container">
+    
+    <div id="one"> <h1>ONE</h1> <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Quisque vitae ullamcorper neque, ac condimentum urna. Vestibulum sem dolor, interdum quis aliquet sit amet, tempor in mauris. Suspendisse auctor varius tortor, eget pellentesque nisl consectetur non. Ut aliquam ultricies elit nec faucibus. Phasellus consectetur ut ligula et dapibus. Maecenas facilisis diam risus, ut congue felis sagittis id. Integer non nisl eu massa pretium faucibus eget vel dolor. Nam condimentum sapien tortor, a vestibulum nunc dapibus sed.</p>
+    </div><!--Close one-->
+    
+    <div id="two"> <h1>TWO</h1> <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae ullamcorper neque, ac condimentum urna.Vestibulum sem dolor, interdum quis aliquet sit amet, tempor in mauris. Suspendisse auctor varius tortor, eget pellentesque nisl consectetur non. Ut aliquam ultricies elit nec faucibus. Phasellus consectetur ut ligula et dapibus. Maecenas facilisis diam risus, ut congue felis sagittis id. Integer non nisl eu massa pretium faucibus eget vel dolor. Nam condimentum sapien tortor, a vestibulum nunc dapibus sed.</p>
+    </div><!--Close two -->
+    
+    <div id="three"> <h1>THREE</h1> <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Quisque vitae ullamcorper neque, ac condimentum urna. Vestibulum sem dolor, interdum quis aliquet sit amet, tempor in mauris. Suspendisse auctor varius tortor, eget pellentesque nisl consectetur non. Ut aliquam ultricies elit nec faucibus. Phasellus consectetur ut ligula et dapibus. Maecenas facilisis diam risus, ut congue felis sagittis id. Integer non nisl eu massa pretium faucibus eget vel dolor. Nam condimentum sapien tortor, a vestibulum nunc dapibus sed.</p>
+    </div><!--Close three-->
+    
+</div><!--Close container-->
+</body>
+
+</html>

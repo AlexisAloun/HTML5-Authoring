@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tighty Whities</title>
+<meta name=”viewport” content=”width=device-width,initialscale=1”>
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    
+    <style>
+    h1{
+            color: cadetblue; 
+            font-variant: small-caps;
+            font-family: "Red Rose";
+            font-size: 2.5em;
+            margin-left: 10px;
+         }
+    #nav{
+            font-family: "Red Rose";
+            font-size: 1.2em;
+        
+    }
+                                 a:link{
+                                 color: black;
+                                 font-style:normal;
+                                 text-decoration: none;
+                                 }
+                                
+                                 a:visited{
+                                 color: black
+                                 }
+
+                                 a:hover{
+                                 font-weight: bold;
+                                 color: cadetblue;
+                                 }
+    .BannerImage{
+        width:100%;
+        height: 350px;
+    }
+    h2{
+        color: black;
+        text-decoration: underline;
+        font-family: "Red Rose";
+    }
+    #Container1{
+        background-color:lightgrey;
+        padding: 20px;
+        font-family: "Roboto Condensed";
+    }
+    .About{
+        text-align: justify;
+        color: black;
+    }
+         #Container2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: auto 0;
+         }
+         #Women , #Men{
+             display: flex;
+             flex-direction: row;
+             background-color: black;
+         }
+         #TShirt{
+             border: 2px solid gainsboro;
+             padding: 15px;
+             background: #eee;
+             margin: 1em 1em;
+             width: 250px;
+             height: 250px;
+             overflow: hidden;
+         }
+         img{
+             width: 200px;
+             height: 200px;
+             border-radius: 5px;
+         }
+        button{
+            font-weight: bold;
+            font-size: 1em;
+            background-color: black;
+            width: 150px;
+            padding: 5px;
+            color: ghostwhite;
+            border-radius: 5px;
+            cursor:pointer;
+            }
+                                 button:link{
+                                 background-color: black;
+                                 font-style:normal;
+                                 text-decoration: none;
+                                 }
+                                
+                                 button:visited{
+                                 background-color: black
+                                 }
+
+                                 button:hover{
+                                 font-weight: bold;
+                                 background-color: cadetblue;
+                                 }
+    footer{
+        background-color: cadetblue;
+        font-family: "Roboto Condensed";
+    }
+    #footer2{
+            border-top: black solid 1px;
+            border-top-width: 100%;
+            font-size: .75em;
+            clear: both;
+    }
+        #footlink:hover{
+                         font-weight: bold;
+                         color: black;
+                        }
+                @media only screen and (max-width: 600px)
+                            {
+                                 #Container1 {
+                                     padding: 5px;
+                                }
+                                 #Women, #Men {
+                                     display: flex;
+                                     flex-direction:row;
+                                     flex-wrap: wrap;
+                                     justify-content: center;
+                                }
+                                #TShirt{
+                                     width: 150px;
+                                     height: 150px;
+                                }
+                                 img{
+                                     width: 100px;
+                                     height: 100px;
+                                     border-radius: 5px;
+                                 }
+                            }
+</style>
+</head>
+<body>
+    <div><h1>Tighty Whities</h1></div>
+    <div id="nav" align="right">
+        <p>  <a href="Chanthinith_FinalProject.html">Home</a>  |  <a href="#Women">Women</a>  |  <a href="#Men">Men</a>  |  <a href="Chanthinith_FinalProject.html">Sales</a>  |  <a href="Contact_Form.html">Contact</a>  </p>
+    </div> <!--Close Navigation Bar-->
+    <img src="Clothing.jpg" class="BannerImage" alt="Clothes">
+    <div id="Container1">
+    <center><h2>Tighty Whities Exclusive Catalog</h2></center>
+    <p  class="About">Tightie Whities, the best online t-shirt store everyone's heard of! Coolest T-Shirts in the World. We provide you with awesome 16 t-shirt designs representing t-shirts in different colors. Wear the swag that your homies are hyped about! These T-Shirts will give you the feels of having the A-Lister status. Stay hyped. Keep up with the trends. Tightie Whities, the best online t-shirt store everyone's heard of! Coolest T-Shirts in the World. We provide you with awesome 16 t-shirt designs representing t-shirts in different colors. Wear the swag that your homies are hyped about! These T-Shirts will give you the feels of having the A-Lister status. Stay hyped. Keep up with the trends.</p><br>
+       <div id="Container2">
+        <div id="Women"> <!-- Start Row 1 -->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt1.jpg" alt="Women's Red T-Shirt">
+             <p>Ruby Red<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 1-->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt2.jpg" alt="Women's Orange T-Shirt">
+             <p>Energetic Orange<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 2-->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt3.jpg" alt="Women's Yellow T-Shirt">
+             <p>Sunshine Yellow<br><em>$15</em></p>
+             </center>
+           </span> <!--Close Pic 3-->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt4.jpg" alt="Women's Green T-Shirt">
+             <p>Lime Green<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 4-->
+        </div> <!--Close Row 1-->
+        <div id="Women"> <!--Start Row 2-->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt5.jpg" alt="Women's Light-Blue T-Shirt">
+             <p>Sky Blue<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 5-->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt6.jpg" alt="Women's Blue T-Shirt">
+             <p>Blissful Blue<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 6-->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt7.jpg" alt="Women's Purple T-Shirt">
+             <p>Violet Purple<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 7-->
+         <span id="TShirt">
+             <center>
+             <img src="WTShirt8.jpg" alt="Women's Pink T-Shirt">
+             <p>Pretty Pink<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 8-->
+        </div> <!--Close Row 2-->
+           <br>
+           <form>
+           <center><p>Choose a Women's T-Shirt Color</p></center>
+              <select>
+              <option value=”1”>Red</option>
+              <option value=”2”>Orange</option>
+              <option value=”3”>Yellow</option>
+              <option value=”4”>Green</option>
+              <option value=”5”>Light-Blue</option>
+              <option value=”6”>Blue</option>
+              <option value=”7”>Purple</option>
+              <option value=”8”>Pink</option> <br>
+              </select>
+               <button type="submit"> Buy </button><br><br>
+           </form>
+        <div id="Men"> <!--Start Row 3-->
+         <span id="TShirt">
+             <center>
+             <img src="MTShirt1.jpg" alt="Men's Red T-Shirt">
+             <p>Radical Red<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 9-->
+         <span id="TShirt">
+             <center>
+             <img src="MTShirt2.jpg" alt="Men's Orange T-Shirt">
+             <p>Hyped Orange<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 10-->
+         <span id="TShirt">
+             <center>
+             <img src="MTShirt3.jpg" alt="Men's Yellow T-Shirt">
+             <p>Caution Yellow<br><em>$15</em></p>
+             </center>
+           </span> <!--Close Pic 11-->
+         <span id="TShirt">
+             <center>
+             <img src="MTShirt4.jpg" alt="Men's Green T-Shirt">
+             <p>Hulk Green<br><em>$15</em></p>
+             </center>
+         </span> <!--Close Pic 12-->
+        </div> <!--Close Row 3-->
+        <div id="Men"> <!--Start Row 4-->
+         <div id="TShirt">
+             <center>
+             <img src="MTShirt5.jpg" alt="Men's Light-Blue T-Shirt">
+             <p>Vice Blue<br><em>$15</em></p>
+             </center>
+         </div> <!--Close Pic 13-->
+         <div id="TShirt">
+             <center>
+             <img src="MTShirt6.jpg" alt="Men's Blue T-Shirt">
+             <p>Blessed Blue<br><em>$15</em></p>
+             </center>
+         </div> <!--Close Pic 14-->
+         <div id="TShirt">
+             <center>
+             <img src="MTShirt7.jpg" alt="Men's Purple T-Shirt">
+             <p>Gangsta Purple<br><em>$15</em></p>
+             </center>
+         </div> <!--Close Pic 15-->
+         <div id="TShirt">
+             <center>
+             <img src="MTShirt8.jpg" alt="Men's Pink T-Shirt">
+             <p>Drippin' Pink<br><em>$15</em></p>
+             </center>
+         </div> <!--Close Pic 16-->
+        </div> <!--Close Row 4 -->
+           <form>
+           <center><p>Choose a Men's T-Shirt Color</p></center>
+              <select>
+              <option value=”1”>Red</option>
+              <option value=”2”>Orange</option>
+              <option value=”3”>Yellow</option>
+              <option value=”4”>Green</option>
+              <option value=”5”>Light-Blue</option>
+              <option value=”6”>Blue</option>
+              <option value=”7”>Purple</option>
+              <option value=”8”>Pink</option> <br>
+              </select>
+               <button type="submit"> Buy </button>
+           </form>
+     </div> <!--Close Container2 --> <br>
+    </div> <!--Close Container1 -->
+    <footer>
+        <span id="footer1">
+            <a id="footlink"  href="Contact_Form.html"><strong>Contact</strong></a><br>
+            Tighty Whities<br>
+            123 Main Street, Westport, CT 06880<br>
+            (800) 555-1212<br>
+        </span><br>
+            <span id="footer2"><em>Copyright © 2019</em> | <a id="footlink" href="Chanthinith_FinalProject.html">Tighty Whities</a>, LLC | All Rights Reserved | <a id="footlink" href="PrivacyPolicy.html">Privacy Policy</a>
+        </span>
+    </footer>
+</body>
+</html>

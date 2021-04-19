@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+/*External style sheets appear in their own file and are attached to the HTML document using the <link>
+tag.
+External Style Sheets are often the preferred method of placing CSS because the document can be applied
+to multiple HTML files giving related documents consistent styling and allowing style changes across
+multiple pages to be completed with a single edit.
+An external style sheet should be saved with the .css file extension*/
+
+h1 {
+font-family: Arial; /*Set the typeface for text*/
+font-size: 4em; /*Sets the font-size of text. Despite the flexibility afforded by CSS, most developers stick to px , pt , and em. Because it’s a relative measurement that respects the users preferences em is becoming the most accepted type measurement unit. */
+font-weight: bold; /*Sets the boldness of text.*/
+text-align: center; /*Right, Center, Left Align or Justify your text*/
+text-decoration:underline; /*Sets underline, or overline on text*/
+font-variant:small-caps; /*Allows use of small caps (Where lower case letters are represented by smaller uppercase letters)*/
+text-shadow:#000; /*Specifies a drop shadow on text*/
+color: rgb(0,51,0) /*Sets the color of text in rgb, hex or color-name format*/
+}
+
+h2 {
+	text-align:center;
+	line-height:normal;/*Sets the height of an individual line.*/
+	text-transform:none; /*Controls the Capitalization of text*/
+	font-style:italic; /*Sets the style in which font is presented. “Normal”, “Italic” and “Oblique” are the options.*/
+}
+
+p {
+color: red;
+line-height: 2em;
+text-align:justify;
+color: green;
+letter-spacing:normal;/*Sets space between characters in text*/
+text-indent:inherit; /*Specifies indent on first line of text*/
+vertical-align:auto; /*Set the vertical alignment of your text*/
+
+
+}
+

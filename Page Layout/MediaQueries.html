@@ -1,0 +1,113 @@
+<!--Bootstrap is a recommended Framework to use if you're giong to be doing a complex layout-->
+<!DOCTYPE html>
+<!--The design we’re working on is a three-column layout. We’ll accomplish by setting appropriate column widths, float rules, and borders. -->
+<!--Make the media Queries based on typical iPhone and iPad width. Please note that it’s easy to overdo it with media queries. Just add one or two queries to address a few Apple screen sizes. -->
+<!-- Apple iPhone 7 resolution is 750 x 1334 pixels.-->
+<html>
+<head>
+    <link href=”https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css” rel=”stylesheet” />
+    <!-- The link that ends in normalize.min.ss is a stylesheet to defeat the weird/irregular settings inside the default stylesheet -->
+    <title>Media Queries - Screen Size Layout</title>
+    <!--Creating placeholders for style rules is helpful when you have complex documents with many divisions and content areas. -->
+    <!--Note that the #container rules come 1st in the style sheet. This is by design. Any individual rules in the content areas that differ from the container override the original container rules.-->
+    <style>
+        #container {
+            width: 90%;
+            background-color: #eee;
+            margin: 0 auto;
+            padding-left: 3px;
+            padding-right: 3px;
+            font-family: Verdana;
+            font-size: 1.1em;
+            }
+        /*Centering the content is accomplished by setting the left and right margin to auto. (We set the top and bottom margins to 0 in this document.)*/
+        header {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            }
+        /*We're able to add a line above the footer by using border-top*/
+        footer {
+            border-top: black solid 1px;
+            font-size: .75em;
+            clear: both;
+            }
+        #colA {
+            width: 20%;
+            float: left;
+            border-right: 1px solid black;
+            padding-right: 3px;
+            }
+        #colB {
+            width: 57%;
+            float: left;
+            padding-left: 5px;
+            padding-right: 5px;
+            }
+        #colC {
+            width: 20%;
+            float: left;
+            }
+                        @media only screen and (max-width: 750px)
+                        {
+                            #colA, #colB, #colC
+                            {
+                            float: none;
+                            width: 100%;
+                            }
+                            #colA
+                            {
+                            border-right: none;
+                            }
+                        }
+        p {
+            font-size: 20px;
+          }
+          /* the CSS inside the media query is applied only if the media type matches that of the device being used.*/
+                  @media (max-width: 800px) {
+                    p{
+                        font-size: 10px;
+                      }
+                   } /*media query that returns the content when the device's WIDTH is LESS than or equal to 800px*/
+                  @media (min-height: 350px) {
+                    p{
+                        font-size: 18px;
+                      }
+                   } /* media query returns the content when the device's HEIGHT is MORE than or equal to 350px */
+    </style>
+</head>
+
+<body>
+<!--The page container div allows you to attach styles to all content on the page without using the body tag as a CSS selector. The page container makes a better parent for elements on the page than the body tag. We’ll implement the page container inside the body tag.-->    
+<div id="container">
+<header><h1>Connecticut News</h1></header>
+<!-- When the screen isn’t wide enough to accommodate the content, the result is unacceptable. Generally, we’ll undo the floats and stack our layers on smaller screens to make our content readable. We accomplish this with media queries. Media queries allow us to create breakpoints at which the design changes based on specific rules, usually on document width. We'll add the media query to the bottom of our style element.-->
+
+<div id="colA">
+    <h2>Best Pizzas in the USA</h2>
+    <p>Connecticut pizzerias that did make the Daily Meal's 2020 list are: No. 47 BAR (New Haven), No. 45 Zuppardi's Apizza (West Haven), No. 43 Colony Grill (Stamford), No. 16 Modern Apizza (New Haven), No. 9 Sally's Apizza (New Haven), and No. 1 Frank Pepe Pizzeria Napoletana (New Haven)</p>
+    <p>Frank Pepe's once again takes the top spot on the list as the best pizza in the U.S. Joining the iconic pizzeria are a trio of New Haven pizza meccas: Sally's Apizza, Modern Apizza and BAR. Outside of New Haven, Stamford's Colony Grill and West Haven's Zuppardi's Apizza round out Connecticut's dominance on the list.</p>
+</div>
+    
+<div id="colB">
+    <h2>Fall Foliage</h2>
+    <p>Foliage season begins in late September and extends through early November. Peak color is estimated to be between October 5 and November 8. However, depending on the weather in the coming weeks, the peak date may be adjusted a few days earlier or later as the season progresses.</p>
+    <p>As a savvy foliage fan, it is important to know why we get such splendid colors in the fall. What most people don't know is that the leaves on the trees already possess these spectacular colors but they are hidden. Leaves contain a chemical substance called chlorophyll, the substance that gives leaves their inherent green color. As the season begins to turn cold, trees begin to block the flow of water to their leaves. Without water, the chlorophyll breaks down and vibrant colors are revealed in all their splendor.</p>
+</div>
+
+<div id="colC">
+    <h2>Mysteries of Connecticut</h2>
+    <p>A stretch of road, closed at both ends, home to mystery and legend, Down's Road in Bethany is said to be "one of the most haunted places in town." People have reportedly seen UFOs on the horizon, shadowy ghosts that walk the street and a small yeti-like monster in the forest, according to Bethwood Patch.</p>
+    <p>Feelings of doom and fear are accompanied by ghostly apparitions and unexplained scratches along the outside of parked cars. Haunted or not, one thing is agreed upon by all: Down's Road is certainly not a friendly place.</p>
+</div>
+    
+<footer>New Haven - Connecticut - New England</footer>
+<!-- When you float an element in the browser you “break” the natural stacking of elements. The result is that any elements below the floated elements are laid out somewhat unpredictably. We can fix this by clearing the floats in the footer element. -->
+
+</div> <!-- Container -->
+    
+</body>
+
+</html>

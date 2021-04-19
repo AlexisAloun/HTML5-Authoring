@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Contact Form</title>
+<meta name=”viewport” content=”width=device-width,initialscale=1”>
+<link href="TWcss.css" rel="StyleSheet" />
+    <style>
+        #MainContainer{
+            margin: auto 0;
+            border: 5px solid cadetblue;
+            }
+        html{
+            background-color: white;
+            }
+        h1 , h2 {
+            font-family: Arial;
+            color: cadetblue;
+            text-align: center;
+            font-weight: bolder;
+            }
+        h1{
+            color: cadetblue; 
+            font-variant: small-caps;
+            font-family: "Red Rose";
+            font-size: 2.5em;
+            }
+        h2{
+            text-decoration: underline;
+            }
+        form{
+            padding: 25px;
+            background-color: lightgrey;
+            width: 50%;
+            text-align-last: center;
+            margin: auto;
+            margin-bottom: 20px;
+            border: 2px solid cadetblue;
+            }
+        input{
+            width: 100%;
+            }
+        #Comment{
+            margin-left: 40px;
+            margin-right: 40px;
+            }
+        textarea{
+            width: 80%;
+            }
+        button{
+            cursor: pointer;
+            }
+        #shop{
+            font-weight: bold;
+            font-size: 14px;
+            background-color: cadetblue;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            }
+        @media only screen and (max-width: 600px)
+        {
+            #Comment{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+    
+<body>
+    <div id="MainContainer">
+    <h1>Tighty Whities</h1>
+    <form action="#" method="post">
+    <h2> Contact Us</h2>
+    <p>Tighty Whities<br>
+    123 Main Street, Westport, CT 06880<br>
+    (800) 555-1212<br>
+    </p>
+    <div class=”container”>
+        <label for=”FirstName”> First Name </label>
+        <input type=”text” id=”FirstName” name="FirstName"/> </div> <br/>
+    <div class=”container”>
+        <label for=”LastName”> Last Name </label>
+        <input type=”text” id=”LastName” name="LastName" /> </div> <br/>
+    <div class=”container”>
+        <label for=”Email”> Email </label>
+        <input type=”email” id=”Email” name="Email" /> </div> <br/>
+    <div class=”container”>
+        <label for=”Phone”> Phone Number </label>
+        <input type="tel" id="Phone" name="Phone" /> </div> <br/>
+    <div class="container">
+        <label for="dob">Birthday</label>
+        <input type="date" id="dob" name="dob" /> </div> <br>
+    <div class=”container”>
+        <label for=”Comment”> Comment </label> <br/>
+        <textarea type="text" id="Comment" rows="5" name="Comment">
+        </textarea> </div>
+    <div class=”container”>
+        <center>
+        <button type=”submit” class="submit"> Submit </button>
+        <button type=”reset” class="clear"> Clear </button> </center> </div> <br/> <br/>
+    <div class=”container”>
+        <a href="Chanthinith_FinalProject.html"> <button type="button" id="shop">SHOP</button></a>
+        </div>
+    </form>
+    </div> <!-- Close MainContainer-->
+     
+    <footer>
+        <span id="footer1">
+            <a id="footlink"  href="Contact_Form.html"><strong>Contact</strong></a><br>
+            Tighty Whities<br>
+            123 Main Street, Westport, CT 06880<br>
+            (800) 555-1212<br>
+        </span><br>
+            <span id="footer2"><em>Copyright © 2019</em> | <a id="footlink" href="Chanthinith_FinalProject.html">Tighty Whities</a>, LLC | All Rights Reserved | <a id="footlink" href="PrivacyPolicy.html">Privacy Policy</a>
+        </span>
+    </footer>
+    
+</body>
+    
+</html>

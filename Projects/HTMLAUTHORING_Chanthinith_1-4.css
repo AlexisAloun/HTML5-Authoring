@@ -1,0 +1,25 @@
+/*create a pleasing and readable design for
+your document. Use an external CSS file to create your typography.*/
+h1 {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; /*Set the typeface for text*/
+font-size: 1.75em; /*Sets the font-size of text. Despite the flexibility afforded by CSS, most developers stick to px , pt , and em. Because it’s a relative measurement that respects the users preferences em is becoming the most accepted type measurement unit. */
+font-weight: bold; /*Sets the boldness of text.*/
+text-align: center; /*Right, Center, Left Align or Justify your text*/
+text-decoration:underline; /*Sets underline, or overline on text*/
+font-variant:small-caps; /*Allows use of small caps (Where lower case letters are represented by smaller uppercase letters)*/
+color: rgb(0,0,102); /*Sets the color of text in rgb, hex or color-name format*/
+}
+
+p {
+line-height:normal;/*Sets the height of an individual line.*/
+text-align:left;
+color: blue;
+letter-spacing:normal;/*Sets space between characters in text*/
+text-indent:inherit; /*Specifies indent on first line of text*/
+vertical-align:auto; /*Set the vertical alignment of your text*/
+}
+
+footer {
+	color: rgb(0,128,192);
+}
+

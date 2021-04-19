@@ -1,0 +1,83 @@
+<!-- Create an HTML5 document from scratch that
+is correctly formed and coded that displays
+a Contact Us form. There should be a
+field for First name, Last name, Email, Contact Number, and comment with submit, reset and Visit Us button (Link it to your favorite site). Also, create a pleasing design for your document. -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Contact Us Form</title>
+    <style>
+        html{
+            background-color: black;
+            }
+        h1 , p {
+            font-family: Arial;
+            color: darkred;
+            text-align: center;    
+            }
+        form{
+            padding: 25px;
+            background-color: lightgrey;
+            width: 50%;
+            text-align-last: center;
+            margin-left: 25%;
+            margin-right:25%;
+            }
+        input{
+            width: 100%;
+            }
+        #Comment{
+            margin-left: 40px;
+            margin-right: 40px;
+            }
+        textarea{
+            width: 80%;
+            }
+        button{
+            cursor: pointer;
+            }
+        .visit{
+            font-weight: bold;
+            font-size: 14px;
+            background-color: darkred;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            }
+    </style>
+</head>
+    
+<body>
+    <h1>SAM HUNT</h1>
+    <form action="#" method="post">
+    <p><strong>Contact Us</strong></p>
+    <div class=”container”>
+        <label for=”FirstName”> First Name </label>
+        <input type=”text” id=”FirstName” name="FirstName"/> </div> <br/>
+    <div class=”container”>
+        <label for=”LastName”> Last Name </label>
+        <input type=”text” id=”LastName” name="LastName" /> </div> <br/>
+    <div class=”container”>
+        <label for=”Email”> Email </label>
+        <input type=”email” id=”Email” name="Email" /> </div> <br/>
+    <div class=”container”>
+        <label for=”Phone”> Contact Number </label>
+        <input type="tel" id="Phone" name="Phone" /> </div> <br/>
+    <div class=”container”>
+        <label for=”Comment”> Comment </label> <br/>
+        <textarea type="text" id="Comment" rows="5" name="Comment">
+        </textarea> </div>
+    <div class=”container”>
+        <center>
+        <button type=”submit” class="submit"> Submit </button>
+        <button type=”reset” class="clear"> Clear </button> </center> </div> <br/> <br/>
+    <div class=”container”>
+        <a href="http://www.samhunt.com/"> <button class="visit">Visit Us!</button></a>
+        </div>
+    </form>
+    
+</body>
+    
+</html>

@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title>Tables</title>
+ <style>
+ table
+ {
+	 background-color: #ccc;
+	 border: solid 2px black;
+	 border-collapse: collapse;
+ }
+ tr, th, td
+ {
+	 border: solid 1px black;
+	 padding: 3px;
+ }
+ th
+ {
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size: 1.2em;
+ }
+ td
+ {
+	 font-family:Arial, Helvetica, sans-serif;
+ }
+ .dark
+ {
+	 background-color: darkblue;
+	 color: white;
+	 }
+  <!-- border-collapse Gets Rid of the Ugly Double Border -->
+ </style>
+ </head>
+ <body>
+ <h1>Computers</h1>
+ <table>
+ <tr>
+ <th>Maker</th><th>Model</th><th>Year</th>
+ </tr>
+ <!-- We can improve the table appearance by bolding the
+text in the first row for the column labels. We’ll use
+the <th> tag, the table header tag, instead of the
+<td> tag.-->
+ <tr class="dark">
+ <td colspan="2">Commodore</td> <td>1982</td>
+ </tr>
+ <tr>
+ <td>IBM</td> <td>IBM PC Junior</td> <td>1983</td>
+ </tr>
+ <tr class="dark">
+ <td rowspan= "2">Apple</td> <td>Apple Lisa</td> <td>1982</td>
+ </tr>
+ <tr>
+ 							<td>Apple Macintosh</td> <td>1984</td>
+ </tr>
+ </table>
+ </body>
+ </html>

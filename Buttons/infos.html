@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Create a form that has submit and reset buttons. The form contains First Name, Last Name, and Address using <input> tag. Add some styles to the button to make them appear more attractive. -->
+<html>
+<head>
+<title>Infos</title>
+    <style>
+        button{
+            font-weight: bold;
+            font-size: 1.5em;
+            background-color: aliceblue;
+            width: 25%;
+            padding: 5px;
+            color: darkblue;
+            }
+        .reset{
+            font-size: 14px;
+            background-color: aliceblue;
+            color: darkblue;
+            width: 10%;
+            }
+    </style>
+</head>
+    
+<body>
+    <form action=”#”>
+        <label for=”firstName”> First Name </label>
+        <input id=”firstName” type=”text” name="firstName">
+        <button class="reset" type=”reset”> Reset </button> <br/>
+        <label for=”lastName”> Last Name </label>
+        <input id=”lastName” type=”text” name="lastName">
+        <button class="reset" type=”reset”> Reset </button> <br/>
+        <label for=”address”> Address </label>
+        <input id=”address” type="text" name="address">
+        <button class="reset" type=”reset”> Reset </button> <br/><br/><br/>
+        <button type=”submit”> Submit </button>
+        
+    </form>
+</body>
+    
+</html>

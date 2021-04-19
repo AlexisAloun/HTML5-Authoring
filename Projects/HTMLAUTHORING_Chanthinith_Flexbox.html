@@ -1,0 +1,123 @@
+<!--Create an HTML5 document from scratch that is
+correctly formed and coded that displays a photo
+gallery with 3 columns and 3 rows using flexbox.
+Label each photo with a title and one-two sentence
+description. Use additional CSS to make sure the
+gallery is readable and attractive.-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Flex Box</title>
+     <meta name=”viewport” content=”width=device-width,initialscale=1”>
+     <style>
+         h1{
+             font-variant: small-caps;
+         }
+         #pics{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+         }
+         #Row{
+             display: flex;
+             flex-direction: row;
+         }
+         #IceCream {
+             border: 2px solid gainsboro;
+             padding: 15px;
+             background: #eee;
+             margin: 1em 1em;
+             width: 250px;
+             height: 250px;
+             overflow: hidden;
+         }
+         img{
+             width: 200px;
+             height: 200px;
+         }
+                            @media only screen and (max-width: 600px)
+                            {
+                                 #IceCream {
+                                     border: 1px solid gainsboro;
+                                     padding: 5px;
+                                     width: 150px;
+                                     height: 150px;
+                                     overflow: hidden;
+                                 }
+                                 img{
+                                     width: 100px;
+                                     height: 100px;
+                                 }
+                            }
+     </style>
+ </head>
+ <body>
+     <center><h1> Ice Cream </h1></center>
+       <div id="pics">
+        <div id="Row">
+         <div id="IceCream">
+             <center>
+             <img src="IceCream1.jpg" alt="Almond Crush">
+             <p>Almond Crush</p>
+             </center>
+         </div> <!--Close Pic 1-->
+         <div id="IceCream">
+             <center>
+             <img src="IceCream2.jpg" alt="Chocolate Drip">
+             <p>Chocolate Drip</p>
+             </center>
+         </div> <!--Close Pic 2-->
+         <div id="IceCream">
+             <center>
+             <img src="IceCream3.jpg" alt="Floral Scoop">
+             <p>Floral Scoop</p>
+             </center>
+           </div> <!--Close Pic 3-->
+         </div> <!--Close Row 1-->
+        <div id="Row">
+         <div id="IceCream">
+             <center>
+             <img src="IceCream4.jpg" alt="Watermelon Sugar">
+             <p>Watermelon Sugar</p>
+             </center>
+         </div> <!--Close Pic 4-->
+         <div id="IceCream">
+             <center>
+             <img src="IceCream5.jpg" alt="Vanilla Classic">
+             <p>Vanilla Classic</p>
+             </center>
+         </div> <!--Close Pic 5-->
+         <div id="IceCream">
+             <center>
+             <img src="IceCream6.jpg" alt="Pastachio Pastel">
+             <p>Pastachio Pastel</p>
+             </center>
+         </div> <!--Close Pic 6-->
+        </div> <!--Close Row 2-->
+        <div id="Row">
+         <div id="IceCream">
+             <center>
+             <img src="IceCream7.jpg" alt="Strawberry Sorbet">
+             <p>Strawberry Sorbet</p>
+             </center>
+         </div> <!--Close Pic 7-->
+         <div id="IceCream">
+             <center>
+             <img src="IceCream8.jpg" alt="Double Raspberry">
+             <p>Double Raspberry</p>
+             </center>
+         </div> <!--Close Pic 8-->
+         <div id="IceCream">
+             <center>
+             <img src="IceCream9.jpg" alt="Froyo Glow">
+             <p>Froyo Glow</p>
+             </center>
+         </div> <!--Close Pic 9-->
+        </div> <!--Close Row 3-->
+     </div>
+ </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Create a web page that lists the upcoming Ted Radio Hour shows. 
+ For each show list the name of the individual show, the description,
+ the date it was published and the
+ copyright information.
+-->
+
+<html>
+
+<head>
+<title> TED Radio Hour </title>
+	<!-- An id attribute begins with a # and then the name of the id which in this case is description -->
+	<!-- Class or Stylesheet attributes begin w/ a . and then the name of the class which is frame in this case -->
+	<style>
+	#InfoBox
+	{
+		background-color:#CCC;
+		border: 2px solid rgb(204,0,0);
+		padding: 5px;
+		margin-bottom: 20px;
+		border-radius: 10px;
+		font-size:14px;
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	.TED
+	{
+		color:#F00;
+		font-weight:bold;
+		font-family:"Arial Black", Gadget, sans-serif;
+		font-size:2em;
+	}
+	#Radio
+	{
+		font-variant:small-caps;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#Detail
+	{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:10px;
+	}
+	.ShowName
+	{
+		font-weight: bold;
+		color:#F00;
+		font-size:18px;
+		text-decoration:underline;
+	}
+	.Date
+	{
+		font-size:12px;
+		font-style:italic;
+	}
+	.CopyRight
+	{
+		font-size:8px;
+		font-family:Georgia, "Times New Roman", Times, serif;
+	}
+	</style>
+</head>
+
+<body>
+	<!-- Heading tags are examples of Block Elements-->
+	<!-- <span> and <div> tags are paired with id or class attributes. -->
+    <!-- The id and class attributes are used to identify and/or group your logical divisions and spans-->
+    <div id="Radio" >
+    <h1> <span class="TED">TED</span> Radio Hour </h1>
+    </div> <!-- Closing Header 1 -->
+    <!-- A class is meant to create a group of elements. You might create a class because
+you want a number of <span> elements to be formatted the same way. The class "frame" can be used repeatedly in the code.-->
+	<div id="Detail">
+	<h2> Exploring the biggest questions of our time with the help of the world's greatest thinkers. <br/>
+    Host Manoush Zomorodi inspires us to learn more about the world, our communities, and most importantly, ourselves.<br/>
+    </h2>
+    </div> <!-- Closing Header 2 -->
+    
+    
+        <div id="InfoBox" >
+        <p><span class="ShowName">What We Value</span><br/>
+        <span class="Date">Fri, 17 Jul 2020<span class="Date"></span><br/>
+        As the pandemic reveals the weaknesses of our economy, businesses and consumers are rethinking what they value. This hour, TED's Corey Hajim shares ideas on shifting the role of business in society. <br/>
+        <span class="CopyRight"><em>Copyright 2012-2020 NPR and Ted Conferences, LLC - For Personal Use Only</span></em>
+        </p>
+        </div> <!-- Closing Paragraph - Value -->
+        
+        <div id="InfoBox" >
+        <p><span class="ShowName">Making Amends</span><br/>
+        <span class="Date">Fri, 10 Jul 2020<span class="Date"></span><br/>
+        What does it mean to make amends for past mistakes? This hour, TED speakers explore how repairing the wrongs of the past is the first step toward healing for the future. Guests include historian and preservationist Brent Leggs, law professor Martha Minow, librarian Dawn Wacek, and playwright V (formerly Eve Ensler). <br/>
+        <span class="CopyRight"><em>Copyright 2012-2020 NPR and Ted Conferences, LLC - For Personal Use Only</span></em>
+        </p>
+        </div> <!-- Closing Paragraph - Making Amends -->
+        
+        <div id="InfoBox" >
+        <p><span class="ShowName">Meditations on Loneliness</span><br/>
+        <span class="Date">Fri, 03 Jul 2020<span class="Date"></span><br/>
+        We're a social species now living in isolation. But loneliness was a problem well before this era of social distancing. This hour, TED speakers explore how we can live and make peace with loneliness. Guests on the show include author and illustrator Jonny Sun, psychologist Susan Pinker, architect Grace Kim, and writer Suleika Jaouad.<br/>
+        <span class="CopyRight"><em>Copyright 2012-2020 NPR and Ted Conferences, LLC - For Personal Use Only</span></em>
+        </p>
+        </div> <!-- Closing Paragraph - Meditation -->    
+        
+        <div id="InfoBox" >
+        <p><span class="ShowName">TED Radio Wow-er</span><br/>
+        <span class="Date">Fri, 26 Jun 2020<span class="Date"></span><br/>
+        School's out, but many kids—and their parents—are still stuck at home. Let's keep learning together. Special guest Guy Raz joins Manoush for an hour packed with TED science lessons for everyone.<br/>
+        <span class="CopyRight"><em>Copyright 2012-2020 NPR and Ted Conferences, LLC - For Personal Use Only</span></em>
+        </p>
+        </div> <!-- Closing Paragraph - Wow-er -->    
+        
+        <div id="InfoBox" >
+        <p><span class="ShowName">The Greater Good?</span><br/>
+        <span class="Date">Fri, 19 Jun 2020<span class="Date"></span><br/>
+        In times of crisis, how do we decide what personal sacrifices we must make for the benefit of all? This hour, TED speakers share four different ideas about how to act for the greater good.<br/>
+        <span class="CopyRight"><em>Copyright 2012-2020 NPR and Ted Conferences, LLC - For Personal Use Only</span></em>
+        </p>
+        </div> <!-- Closing Paragraph - Wow-er -->     
+</body>
+
+</html>

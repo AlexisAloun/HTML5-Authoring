@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+ <!-- Create an HTML5 document from scratch that is
+correctly formed and coded that displays a table
+of several companies from around the world.
+There should be a field for the company name, the
+company’s country of origin, the date that it was
+started in and the names of its founders.
+Use row colors to make the table’s content easier to
+read and add a single line border. Also, change the
+default font of the table into a font of your choosing.-->
+ <html>
+ <head>
+ <title>Companies</title>
+ <style>
+ h1
+ {
+	 font-variant:small-caps;
+	 font-family:Arial, Helvetica, sans-serif;
+ }
+ table
+ {
+	 background-color: gray;
+	 border: solid 1px black;
+	 border-collapse: collapse;
+	 font-family: "roboto Condensed", sans-serif;
+ }
+ tr, th, td
+ {
+	 border: solid 1px black;
+	 padding: 3px;
+ }
+ th
+ {
+	 font-family:Arial, Helvetica, sans-serif;
+	 font-size: 1.2em;
+ }
+ td
+ {
+	 font-family:Arial, Helvetica, sans-serif;
+ }
+ .darkred
+ {
+	 background-color: darkred;
+	 color: white;
+	 }
+  <!-- border-collapse Gets Rid of the Ugly Double Border -->
+ </style>
+ </head>
+ <body>
+ <h1>Worldwide Companies</h1>
+ <table>
+ <tr>
+ <th>Name</th><th>Country</th><th>Founder</th><th>Year Established</th>
+ </tr>
+ <!-- We can improve the table appearance by bolding the
+text in the first row for the column labels. We’ll use
+the <th> tag, the table header tag, instead of the
+<td> tag.-->
+ <tr class="darkred">
+ <td>Samsung</td><td>South Korea</td><td>Lee Byung-Chul</td><td>1938</td>
+ </tr>
+ <tr>
+ <td>Toyota</td><td>Japan</td><td>Kiichiro Toyoda</td><td>1937</td>
+ </tr>
+ <tr class="darkred">
+ <td>Alibaba</td> <td>China</td><td>Jack Ma · Peng Lei</td><td>1999</td>
+ </tr>
+ <tr>
+ <td>Walt Disney</td> <td>United States</td><td>Walt Disney · Roy O. Disney</td><td>1923</td>
+ </tr>
+ </table>
+ </body>
+ </html>

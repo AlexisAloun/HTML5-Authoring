@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- <span> and <div> are used to section off parts of a document so that you can format these sections however you'd like to -->
+<!-- a <div> is used to mark off large sections of a document, putting them in their own "box"-->
+<!-- <div> and <span> tags give us a convenient method to isolate parts of our content for formatting or
+access via JavaScript.-->
+
+<html>
+
+<head>
+<title> Div and Span </title>
+	<!-- An id attribute begins with a # and then the name of the id which in this case is description -->
+	<!-- Class or Stylesheet attributes begin w/ a . and then the name of the class which is frame in this case -->
+	<style>
+	#description
+	{
+		background-color:#CCC;
+		border: 2px solid rgb(0,0,153);
+		padding: 5px;
+	}
+	.frame
+	{
+		color:#006;
+		font-weight:bold;
+	}
+	.first
+	{
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	</style>
+</head>
+
+<body>
+	<!-- Heading tags are examples of Block Elements-->
+	<!-- <span> and <div> tags are paired with id or class attributes. -->
+    <!-- The id and class attributes are used to identify and/or group your logical divisions and spans-->
+    <h1> <span class="frame">Framework </span> Television </h1>
+    <!-- A class is meant to create a group of elements. You might create a class because
+you want a number of <span> elements to be formatted the same way. The class "frame" can be used repeatedly in the code.-->
+    
+    <!-- The <div> tag starts a logical division. -->
+    <div id="description" > <!-- the id uniquely identifies the logicial division. In fact, in well coded HTML the
+value "description" could not be repeated in any other id. It’s meant to be a unique identifier. -->
+   
+    <p><span class="first">Learn digital skills
+    like coding, design and app development with
+    <span class="frame">Framework </span> Television.</span></p>
+    <!-- you can have <span>s within <span>s and <div>s within <div>s-->
+    
+    <p><strong>Digital skills</strong> are the "readin', writin' and
+    arithmetic" of the current age. Without these
+    skills you're limited in the job market.
+    <span class="frame">Framework </span> helps you
+    develop digital skills through television
+    programming that is instructional, innovative
+    and interesting.</p>
+    <!-- Digital Skills is an example of Inline Elements because it's used within the inline tags <strong></strong>-->
+    
+    <p>You can watch <span class="frame">Framework </span>
+    anywhere you watch video-- The Web,
+    your Smart TV, or streaming media device.</p>
+    </div>
+	<!-- Paragraph tags are also examples of Block Elements-->
+</body>
+
+</html>

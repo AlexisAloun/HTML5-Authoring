@@ -1,0 +1,30 @@
+h1
+{
+font-family: Verdana;
+font-size: 1.75 em;
+font-weight: bold;
+text-decoration: none;
+font-variant: small-caps;
+color: rgb(75,0,100);
+}
+p
+{
+line-height: 2em;
+text-align: left;
+}
+
+/* Debug This Semantic HTML. We’ve got two separate files here:
+hl
+{
+font-family: Verdana
+font-size: 1.75mem
+font-weight: bold
+text-decoration: none
+font-variant: mall-caps
+color: rgb(75,0,100)
+}
+p
+{
+line-height: 2em
+text-align: left
+} */
